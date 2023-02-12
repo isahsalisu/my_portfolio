@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+/* seperation */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+  background-color: #EAEAEA;
+  height: 100%;
+  background-color: lightseagreen;
+}
+
+header h1 {
+  padding-left: 120px;
+  padding-top: 40px;
+  margin: 0;
+}
+
+.head1 {
+  color: white;
+}
+
+header span {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 95%;
+  color: #FFFFFF;
+  padding-left: 15em;
+  margin-top: -0.5em;
+}
+
+nav {
+  background-color: #555;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 2em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+nav li {
+  padding: 0.5em;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+}
+
+nav a:link {
+  color: #FFFFFF;
+}
+
+nav a:visited {
+  color: #EAEAEA;
+}
+
+nav a:hover {
+  color: #D3DBEB;
+}
+
+main {
+  background-color: lightseagreen;
+  color: #fff;
+  padding: 20px 20px;
+  overflow: auto;
+  min-height: 550px;
+  margin-top: 20px;
+  line-height: 2;
+}
+
+.meal3 {
+  background-image: url("02-portfolio-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 10px;
+}
+
+.meal3 {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.img1 {
+  background-image: url("salis2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  opacity: 0.7;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image-source: url("salis2.jpg");
+  border-image-slice: 30;
+}
+
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.education {
+  background-image: url("educa.jpg");
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+}
+
+.project1 {
+  background-image: url("02-portfolio-2.jpg");
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 0;
+}
+
+.proOpacity {
+  width: 100%;
+  padding: 20px 40px;
+  color: white;
+  background: rgb(0, 0, 0, 0.55);
+}
+
+.education p {
+  width: 60%;
+}
+
+h2 {
+  color: #555;
+  font-family: arial, sans-serif;
+  margin: 10px;
+}
+
+footer {
+  background: #aaa;
+  font-size: 70%;
+  text-align: center;
+  padding: 10px;
+  clear: both;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #aaa;
+  height: 100px;
+}
+
+.footer a {
+  padding: 20px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.ig {
+  color: red;
+}
+
+.fb {
+  color: skyblue;
+}
+
+.tw {
+  color: yellow;
+}
+
+header,
+main,
+nav,
+footer,
+figure,
+figcaption {
+  display: block;
+}
+/* responsive */
+
+@media screen and (min-width:750px) {
+  header,
+  footer {
+      text-align: center;
+  }
+  img {
+      float: left;
+      margin-right: 20px;
+  }
+  content-wrap {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 20px;
+  }
+  tw fb em {
+      display: flex;
+      justify-content: center;
+  }
+}
+
+@media screen and (max-width:749px) {
+  h1 {
+      font-size: 75px;
+      line-height: 0.9;
+      margin-bottom: 20px;
+  }
+  h2 {
+      line-height: 1;
+  }
+  a {
+      padding: 5px;
+  }
+}
